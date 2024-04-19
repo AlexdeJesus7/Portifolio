@@ -108,14 +108,14 @@ section div button:hover {
 
 .projetos {
     background-color: #191919;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .projetos h2 {
     color: white;
     font-size: 75px;
+    text-align: center;
 }
 
 .card {
@@ -149,6 +149,7 @@ section div button:hover {
     border-radius: 25px;
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 .card a:hover {
