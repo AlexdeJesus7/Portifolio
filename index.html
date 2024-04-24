@@ -5,44 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
     <title>Alex de Jesus</title>
 </head>
 
 <body>
-    <div class="principal">
-        <nav>
-            <h2 class="portfolio">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a class="link-menu" href="#home">Home</a></li>
-                <li><a class="link-menu" href="#sobre">Sobre</a></li>
-                <li><a class="link-menu" href="#projeto-id">Projetos</a></li>
-                <li><a class="link-menu" href="#fale-comigo">Fale Comigo</a></li>
-            </ul>
-        </nav>
 
-        <div class="nome">
-            <h1>Alex de <span>Jesus</span></h1>
-            <h3>Programador Front End</h3>
-        </div>
-    </div>
-    <section id="sobre">
-        <img src="./img/rodolfo.png">
-        <div>
-            <h2>Sobre Mim</h2>
-            <p>
-                Eu sou um Programador Front End, tenho experiência e conhecimento criando aplicações com HTML, CSS,
-                JavaScript, React e Node
-            </p>
-            <a href="#fale-comigo"><button>Entre em Contato</button></a>
-        </div>
-    </section>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <h2>Portfo<span>lio</span></h2>
+            </div><!-- logo  -->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a class="link-menu" href="#inicio">Home</a></li>
+                    <li><a class="link-menu" href="#sobre">Sobre</a></li>
+                    <li><a class="link-menu" href="#projetos">Projetos</a></li>
+                    <li><a class="link-menu" href="#fale-comigo">Fale Comigo</a></li>
+                </ul>
+            </nav>
+        </div><!-- interface -->
+    </header>
 
-    <div class="projetos" id="projeto-id">
-        <h2>Principais projetos</h2>
+    <main>
+
+        <section class="topo-do-site" id="inicio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Alex de <span>Jesus</span></h1>
+                        <h3>Programador Front End</h3>
+                    </div><!-- txt-topo-site -->
+                    <div class="img-topo-site">
+                        <img src="img/background.png">
+                    </div><!-- img-topo-site -->
+                </div><!-- flex -->
+            </div><!-- interface -->
+        </section> <!-- topo-do-site -->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="./img/rodolfo.png">
+                    </div><!-- img-sobre -->
+                    <div class="txt-sobre">
+                        <h2>Sobre Mim</h2>
+                        <p> Eu sou um Programador Front End, tenho experiência e conhecimento criando aplicações com HTML, CSS,JavaScript, React e Node</p>
+                        <div class="btn-sobre">
+                            <a href="#fale-comigo"><button>Entre em Contato</button></a>
+                        </div><!-- btn-sobre -->
+                    </div><!-- txt-sobre -->
+                </div><!-- flex -->
+            </div><!-- interface -->
+        </section><!-- sobre -->
+
+        <section class="portfolio" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">Principais Pro<span>jetos</span></h2>
+                <div class="flex">
+
+                    <div class="img-port" style="background-image: url(img/netflix.png);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(img/netflix.png);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(img/netflix.png);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+
+                </div><!-- flex -->
+            </div><!-- interface -->
+        </section><!-- portfolio -->
+
+    </main>
+
+
+    <div class="projetos interface flex" id="projeto-id">
+        
         <div class="card-projetos">
             <div class="card">
                 <img src="./img/netflix.png" alt="">
@@ -61,7 +109,7 @@
             </div>
 
             <div class="card">
-                <img src="./img/crono.png" alt="">
+                <img src="./img/crono.png">
                 <h5>Cronometro</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam incidunt, odio hic totam obcaecati
                     dolorem
@@ -69,16 +117,32 @@
                 <a href="" target="_blank">Ver Projeto</a>
             </div>
         </div>
-    </div>
 
-    <footer id="fale-comigo">
+        <div class="card-projetos">
+            <div class="img-port" style="background-image: url(img/netflix.png);">
+                <div class="overlay">Projeto 1</div>
+            </div>
+
+            <div class="img-port" style="background-image: url(img/netflix.png);">
+                <div class="overlay">Projeto 2</div>
+            </div>
+
+            <div class="img-port" style="background-image: url(img/netflix.png);">
+                <div class="overlay">Projeto 3</div>
+            </div>
+        </div>
+
+    </div> <!--div porjetos-->
+
+    <footer class="interface" id="fale-comigo">
         <h5>Alex de Jesus</h5>
         <p>Para mais informações</p>
 
         <div class="social">
-            <a href="https://www.linkedin.com/in/alex-de-jesus-48a43291/" target="_blank" rel=""><img
+            <a href="https://www.linkedin.com/in/alex-de-jesus-48a43291/" target="_blank"><img
                     src="img/linkedin.png"></a>
-            <a href="tel:+5586999182894" rel=""><img src="img/telefone.png"></a>
+            <a href="tel:+5586999182894"><img src="img/whatsapp.png"></a>
+            <a href="mailto:jefocusempresarial@gmail.com"><img src="img/gmail.png"></a>
         </div>
     </footer>
 </body>
