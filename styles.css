@@ -171,7 +171,7 @@ section.sobre .img-sobre img {
     font-weight: 600;
 }
 
-/* ESTILO DO PORTFOLIO */
+/* ESTILO DO PORTFOLIO 1*/
 
 section.portfolio {
     padding: 80px 4%;
@@ -219,6 +219,112 @@ section.portfolio .flex {
 .overlay:hover {
     opacity: 1;
 }
+
+/* ESTILO DO PORTFOLIO 2*/
+
+.img-port-card {
+    background-color: #000000;
+    height: 460px;
+    width: 360px;
+    border-radius: 40px;
+    padding: 7% 35px;
+    text-align: center;
+    position: relative;
+}
+
+.img-port-card img {
+    height: 100px;
+}
+
+.img-port-card h5 {
+    color: white;
+    font-size: 24px;
+}
+
+.img-port-card p {
+    color: #e2b9c6;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.img-port-card a {
+    background-color: #f9004d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.img-port-card a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+/* ESTILO DO RODAPE */
+
+footer {
+    background-color: #000000;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .txt-footer h5 {
+    color: white;
+    font-size: 30px;
+}
+
+footer .txt-footer p {
+    color: white;
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.btn-social {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-social img {
+    height: 28px;
+    
+}
+
+.btn-social a {
+    background-color: #f9004d;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-social a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1020px) {
+    section div {
+        flex-direction: column;
+    }
+
+    .img-nome {
+        position: absolute;
+        right: 0;
+        margin-top: 50px;
+    }
+    
+    
   
 
 /*  
